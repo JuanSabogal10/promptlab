@@ -284,7 +284,7 @@ async function runEvaluation() {
 }
 
 $('minus').onclick = () => { count = Math.max(2, count - 1); $('count').textContent = count; };
-$('plus').onclick = () => { count = Math.min(8, count + 1); $('count').textContent = count; };
+$('plus').onclick = () => { count = Math.min(20, count + 1); $('count').textContent = count; };
 promptEl.addEventListener('input', () => { $('charCount').textContent = `${promptEl.value.length} caracteres`; });
 $('charCount').textContent = `${promptEl.value.length} caracteres`;
 $('customCriteria').addEventListener('input', renderRubric);
